@@ -1,4 +1,5 @@
 import { createRandomSong } from "../data";
+import { store, songsSlice } from "../store/index";
 
 function SongPlaylist() {
   // To Do:
@@ -6,8 +7,7 @@ function SongPlaylist() {
   const songPlaylist = [];
 
   const handleSongAdd = (song) => {
-    // To Do:
-    // Add song to list of songs
+    store.dispatch(songsSlice.actions.addSong(song));
   };
   const handleSongRemove = (song) => {
     // To Do:

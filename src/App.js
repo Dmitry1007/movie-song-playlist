@@ -13,9 +13,9 @@ export default function App() {
         Reset Both Playlists
       </button>
       <hr />
-      <MoviePlaylist />
-      <hr />
       <SongPlaylist />
+      <hr />
+      <MoviePlaylist />
     </div>
   );
 }
