@@ -15,7 +15,7 @@ const songsSlice = createSlice({
   },
 });
 
-const movieSlice = createSlice({
+const moviesSlice = createSlice({
   name: "movie",
   initialState: [],
   reducers: {
@@ -32,10 +32,10 @@ const movieSlice = createSlice({
 const store = configureStore({
   reducer: {
     songs: songsSlice.reducer,
-    movies: movieSlice.reducer,
+    movies: moviesSlice.reducer,
   },
 });
 
 export { store };
 export const { addSong, removeSong } = songsSlice.actions;
-export const { addMovie, removeMovie } = movieSlice.actions;
+export const { addMovie, removeMovie } = moviesSlice.actions;
