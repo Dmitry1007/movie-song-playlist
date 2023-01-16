@@ -30,6 +30,11 @@ const moviesSlice = createSlice({
       state.splice(index, 1);
     },
   },
+  extraReducers(builder) {
+    builder.addCase("song/reset", (state, action) => {
+      return [];
+    });
+  },
 });
 
 const store = configureStore({
